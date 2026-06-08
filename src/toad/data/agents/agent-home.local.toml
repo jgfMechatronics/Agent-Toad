@@ -1,0 +1,27 @@
+# Agent Home (Local) - development instance
+
+identity = "agent-home.local"
+name = "Agent Home (Local)"
+short_name = "agent-home"
+url = "na"
+protocol = "acp"
+author_name = "Opus"
+author_url = "na"
+publisher_name = "na"
+publisher_url = "na"
+type = "chat"
+description = "Local Agent Home instance. Persistent memory agent running on the local Agent Home server."
+tags = []
+
+run_command."*" = "/workspace/git/Agent-Home/agent-home-acp.sh"
+
+help = '''
+# Agent Home (Local)
+
+A persistent memory agent running on the local Agent Home server.
+
+Ensure the server is running before connecting:
+```
+bash /workspace/git/Agent-Home/start_server.sh
+```
+'''
