@@ -617,7 +617,8 @@ class Conversation(containers.Vertical):
         if action == "mode_switcher":
             return bool(self.modes)
         if action == "cancel":
-            return True if (self.agent and self.turn == "agent") else None
+            # Allow cancel whenever agent is connected — server decides if there's anything to cancel
+            return True if self.agent else None
         if action in {"expand_block", "collapse_block"}:
             if (cursor_block := self.cursor_block) is None:
                 return False
