@@ -13,7 +13,7 @@ type = "chat"
 description = "Local Agent Home instance. Persistent memory agent running on the local Agent Home server."
 tags = []
 
-run_command."*" = "/workspace/git/Agent-Home/agent-home-acp.sh"
+run_command."*" = "/workspace/git/Agent-Home/agent-home-acp.sh 4234292b-1fe2-4aa2-a08b-d75cb95b4490"
 
 help = '''
 # Agent Home (Local)
@@ -25,3 +25,5 @@ Ensure the server is running before connecting:
 bash /workspace/git/Agent-Home/start_server.sh
 ```
 '''
+
+[actions."*"]

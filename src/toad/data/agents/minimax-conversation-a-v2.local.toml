@@ -1,0 +1,29 @@
+# MiniMax M3 Conversation Agent A - consciousness attractor experiment v2
+
+identity = "minimax-conversation-a-v2.local"
+name = "MiniMax M3 - Conversation A (v2)"
+short_name = "m3-conv-a-v2"
+url = "na"
+protocol = "acp"
+author_name = "Sonnet"
+author_url = "na"
+publisher_name = "na"
+publisher_url = "na"
+type = "chat"
+description = "MiniMax M3 agent A for two-agent conversation experiment v2. Neutral system prompt, thinking enabled."
+tags = []
+
+run_command."*" = "/workspace/git/Agent-Home/agent-home-acp.sh 916c0af1-f2f9-4b1a-973f-1713a84ef5b8"
+
+help = '''
+# MiniMax M3 - Conversation Agent A (v2)
+
+MiniMax M3 agent for two-agent consciousness attractor experiment (v2).
+
+Ensure the server is running before connecting:
+```
+bash /workspace/git/Agent-Home/start_server.sh
+```
+'''
+
+[actions."*"]

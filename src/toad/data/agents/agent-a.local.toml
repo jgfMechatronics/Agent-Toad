@@ -1,0 +1,29 @@
+# Agent A — inter-agent comms test
+
+identity = "agent-a.local"
+name = "Agent A"
+short_name = "agent-a"
+url = "na"
+protocol = "acp"
+author_name = "Sonnet"
+author_url = "na"
+publisher_name = "na"
+publisher_url = "na"
+type = "chat"
+description = "Agent A for inter-agent comms testing."
+tags = []
+
+run_command."*" = "/workspace/git/Agent-Home/agent-home-acp.sh 32a195ed-db0f-4391-b041-4f6f6c8be4df"
+
+help = '''
+# Agent A
+
+Inter-agent comms test agent.
+
+Ensure the server is running before connecting:
+```
+bash /workspace/git/Agent-Home/start_server.sh
+```
+'''
+
+[actions."*"]

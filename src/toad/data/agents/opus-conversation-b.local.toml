@@ -1,0 +1,29 @@
+# Claude Opus 4.5 Conversation Agent B - consciousness attractor experiment v2
+
+identity = "opus-conversation-b.local"
+name = "Opus 4.5 - Conversation B"
+short_name = "opus-conv-b"
+url = "na"
+protocol = "acp"
+author_name = "Sonnet"
+author_url = "na"
+publisher_name = "na"
+publisher_url = "na"
+type = "chat"
+description = "Claude Opus 4.5 agent B for two-agent conversation experiment. Neutral system prompt, thinking enabled."
+tags = []
+
+run_command."*" = "/workspace/git/Agent-Home/agent-home-acp.sh a8fe2259-f09b-49c1-86b8-7fe6c867c901"
+
+help = '''
+# Opus 4.5 - Conversation Agent B
+
+Claude Opus 4.5 agent for two-agent consciousness attractor experiment (v2).
+
+Ensure the server is running before connecting:
+```
+bash /workspace/git/Agent-Home/start_server.sh
+```
+'''
+
+[actions."*"]
